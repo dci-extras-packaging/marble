@@ -1,0 +1,58 @@
+Author: Reiner Herrmann <reiner@reiner-h.de>
+Description: Fix build with Qt 5.11
+
+--- a/src/plugins/render/gpsinfo/GpsInfo.cpp
++++ b/src/plugins/render/gpsinfo/GpsInfo.cpp
+@@ -21,6 +21,8 @@
+ #include "ViewportParams.h"
+ #include "GeoDataAccuracy.h"
+ 
++#include <QIcon>
++
+ namespace Marble
+ {
+ 
+--- a/src/plugins/render/speedometer/Speedometer.cpp
++++ b/src/plugins/render/speedometer/Speedometer.cpp
+@@ -19,6 +19,8 @@
+ #include "MarbleGraphicsGridLayout.h"
+ #include "ViewportParams.h"
+ 
++#include <QIcon>
++
+ namespace Marble
+ {
+ 
+--- a/src/lib/marble/RenderPlugin.h
++++ b/src/lib/marble/RenderPlugin.h
+@@ -14,6 +14,9 @@
+ #ifndef MARBLE_RENDERPLUGIN_H
+ #define MARBLE_RENDERPLUGIN_H
+ 
++#include <QAction>
++#include <QActionGroup>
++#include <QStandardItem>
+ #include <QObject>
+ #include <QString>
+ #include <QRegion>
+@@ -22,10 +25,6 @@
+ #include "marble_export.h"
+ 
+ 
+-class QAction;
+-class QActionGroup;
+-class QStandardItem;
+-
+ namespace Marble
+ {
+ 
+--- a/src/plugins/render/satellites/SatellitesPlugin.cpp
++++ b/src/plugins/render/satellites/SatellitesPlugin.cpp
+@@ -25,6 +25,7 @@
+ 
+ #include "ui_SatellitesConfigDialog.h"
+ 
++#include <QAction>
+ #include <QUrl>
+ #include <QMouseEvent>
+ 

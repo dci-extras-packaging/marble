@@ -1,0 +1,38 @@
+#!/usr/bin/make -f
+
+l10npkgs_firstversion_ok := 4:16.04.3-7~
+
+include /usr/share/pkg-kde-tools/qt-kde-team/3/debian-qt-kde.mk
+include /usr/share/pkg-kde-tools/qt-kde-team/2/l10n-packages.mk
+libpkgs_gen_strict_local_shlibs = $(libpkgs_all_packages)
+include /usr/share/pkg-kde-tools/qt-kde-team/3/library-packages.mk
+
+vendor := $(shell dpkg-vendor --query Vendor)
+
+ifeq ($(vendor),Ubuntu)
+  ifeq ($(DEB_HOST_ARCH),armel)
+    conf_args += -DWITH_OpenGL=OFF
+  endif
+endif
+
+override_dh_auto_configure:
+	$(overridden_command) -- -DWITH_DESIGNER_PLUGIN=ON \
+				 -DWITH_KF5=TRUE \
+				 -DMARBLE_INSTALL_ANDROID_APPS=ON \
+				 $(conf_args)
+
+override_dh_auto_install:
+	$(overridden_command)
+	# remove extra license files
+	rm -f debian/tmp/usr/share/marble/data/LICENSE.txt
+	rm -rf debian/tmp/usr/share/marble/data/licenses/
+
+override_dh_strip:
+	$(overridden_command) --dbgsym-migration='marble-dbg (<= 4:15.12.1-1~~)'
+
+override_dh_auto_test:
+	# Disable the auto tests at build time
+	:
+
+override_dh_clean:
+	$(overridden_command) -Xdata/mwdbii/PISLAND.PNT.orig -Xdata/mwdbii/PLAKE.PNT.orig

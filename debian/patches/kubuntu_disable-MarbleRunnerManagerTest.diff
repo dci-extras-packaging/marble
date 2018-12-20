@@ -1,0 +1,23 @@
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Thu, 14 Apr 2016 05:52:13 +0200
+Subject: kubuntu_disable-MarbleRunnerManagerTest
+
+---
+ tests/CMakeLists.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/tests/CMakeLists.txt b/tests/CMakeLists.txt
+index d0db4d6..37a9e6e 100644
+--- a/tests/CMakeLists.txt
++++ b/tests/CMakeLists.txt
+@@ -65,7 +65,9 @@ marble_add_test( QuaternionTest )           # Check Quaternion arithmetic
+ marble_add_test( TileIdTest )               # Check TileId arithmetic
+ marble_add_test( ViewportParamsTest )
+ marble_add_test( PluginManagerTest )        # Check plugin loading
+-marble_add_test( MarbleRunnerManagerTest )  # Check RunnerManager signals
++# disabled
++# Riddell> when I asked marble upstream they said it was flakey and to be ignored
++#marble_add_test( MarbleRunnerManagerTest )  # Check RunnerManager signals
+ marble_add_test( BookmarkManagerTest )
+ marble_add_test( PlacemarkPositionProviderPluginTest )
+ marble_add_test( PositionTrackingTest )

@@ -1,0 +1,4 @@
+marble-plugins: postinst-must-call-ldconfig usr/lib/*/libmarbledeclarative.so
+marble-plugins: package-must-activate-ldconfig-trigger usr/lib/*/libmarbledeclarative.so
+marble-plugins: shlib-without-versioned-soname usr/lib/x86_64-linux-gnu/libmarbledeclarative.so libmarbledeclarative.so
+marble-plugins: package-name-doesnt-match-sonames libmarbledeclarative
