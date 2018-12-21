@@ -1,2 +1,2 @@
 version=4
-opts=pgpsigurlmangle=s/$/.sig/ https://download.kde.org/stable/applications/([\d.]+)/src/@PACKAGE@-([\d.]+)\.tar\.xz
+opts=pgpsigurlmangle=s/$/.sig/ https://download.kde.org/Attic/applications/17.08.3/src/@PACKAGE@-17.08.3\.tar\.xz
