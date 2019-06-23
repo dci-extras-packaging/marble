@@ -1,4 +1,4 @@
-marble (4:18.12.0-1) unstable; urgency=medium
+marble (4:19.04.2-1) unstable; urgency=medium
 
   * New upstream release.
     - Refresh dependencies from cmake.
