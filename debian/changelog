@@ -1,16 +1,22 @@
-marble (4:17.08.3-3.2) testing; urgency=medium
+marble (4:18.12.0-1) unstable; urgency=medium
 
-  * Added nominatim-url-https.patch
+  * New upstream release.
+    - Refresh dependencies from cmake.
+    - Add plasma-workspace needed to fix cmake error:
+      warnings during generation of metainfo for org.kde.plasma.worldmap:
+      Package type "Plasma/Wallpaper" not found 
+  * Add hardening+=all buildflags to rules to fix lintian.
+  * Add Build-Depends-Package field to symbols files.
+  * Refresh copyright file.
+    - Use https for copyright-format.
+    - Update CC-BY-3.0 copyright text.
+  * Update VCS entries to salsa.
+  * Refresh symbols.
+  * Update install file plasma-marble.
+  * Add Kubuntu patch to disable TestGeoDataWriter
+    broken upstream since 2017. KDE Bug 390941. 
 
- -- Leszek <leszek@zevenos.com>  Thu, 20 Dec 2018 19:50:49 +0100
-
-marble (4:17.08.3-3.1) unstable; urgency=low
-
-  * Non-maintainer upload.
-  * Add missing qml-module dependencies for marble-maps. (Closes: #879756)
-  * Add patch to build with Qt 5.11 by including missing headers.
-
- -- Reiner Herrmann <reiner@reiner-h.de>  Sat, 27 Oct 2018 13:38:29 +0200
+ -- Scarlett Moore <sgmoore@kde.org>  Thu, 20 Dec 2018 08:15:39 -0700
 
 marble (4:17.08.3-3) unstable; urgency=medium
 

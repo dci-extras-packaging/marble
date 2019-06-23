@@ -1,4 +1,3 @@
 do_not_install_private_headers
 kubuntu_disable-MarbleRunnerManagerTest.diff
-qt5.11.patch
-https_nominatim_fix.patch
+kubuntu_disable-TestGeoDataWriter.diff

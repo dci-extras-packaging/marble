@@ -1,4 +1,4 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: marble
 Source: git://anongit.kde.org/marble.git
 Comment: This package was developed for Ubuntu by the Kubuntu Developers and
@@ -2717,10 +2717,6 @@ Copyright: No copyright holders listed
 Comment: No explicit license found, using license(s) from:
  data/placemarks/COPYRIGHT
 License: CC-BY-3.0
- This work is licensed under a Creative Commons Attribution 3.0 License,
- see http://creativecommons.org/licenses/by/3.0/
- The Data is provided "as is" without warranty or any representation of
- accuracy, timeliness or completeness.
 
 Files: COPYING-CMAKE-SCRIPTS
        FindMarble.cmake.in
@@ -2825,11 +2821,8 @@ License: public-domain
 
 Files: data/maps/earth/openstreetmap/tour.kml
        data/placemarks/COPYRIGHT
+Copyright: Raymond Ostertag
 License: CC-BY-3.0
- This work is licensed under a Creative Commons Attribution 3.0 License,
- see http://creativecommons.org/licenses/by/3.0/
- The Data is provided "as is" without warranty or any representation of
- accuracy, timeliness or completeness.
 
 Files: src/lib/marble/htmlfeatures/bootstrap.min.css
 Copyright: 2012, Twitter, Inc
@@ -2839,6 +2832,7 @@ License: Apache-2.0
 
 Files: debian/*
 Copyright: 2011 Kubuntu Developers <kubuntu-devel@lists.launchpad.net>
+                  2018 Scarlett Moore <sgclark@kde.org>
 License: LGPL-2.1+
 
 Files: doc/* docs/* COPYING.DOC
@@ -3007,3 +3001,30 @@ License: GFDL-1.2
  On Debian systems, the full text of the GNU Free Documentation
  License version 1.2 can be found in the file
  `/usr/share/common-licenses/GFDL-1.2'.
+
+License: CC-BY-3.0
+ CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM
+ AND DOES NOT PROVIDE LEGAL SERVICES. DISTRIBUTION
+ OF THIS LICENSE DOES NOT CREATE AN ATTORNEY-CLIENT
+ RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
+ INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS
+ MAKES NO WARRANTIES REGARDING THE INFORMATION
+ PROVIDED, AND DISCLAIMS LIABILITY FOR DAMAGES
+ RESULTING FROM ITS USE.
+ .
+ THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER
+ THE TERMS OF THIS CREATIVE COMMONS PUBLIC
+ LICENSE ("CCPL" OR "LICENSE"). THE WORK IS PROTECTED
+ BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE
+ OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS
+ LICENSE OR COPYRIGHT LAW IS PROHIBITED.
+ .
+ BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE,
+ YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS OF
+ THIS LICENSE. TO THE EXTENT THIS LICENSE MAY BE
+ CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS
+ YOU THE RIGHTS CONTAINED HERE IN CONSIDERATION OF
+ YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
+ .
+ You should have received a copy of the license along with this
+ work.  If not, see <http://creativecommons.org/licenses/by/3.0/>.

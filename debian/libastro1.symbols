@@ -1,5 +1,6 @@
 # SymbolsHelper-Confirmed: 4:17.08.1 amd64
 libastro.so.1 libastro1 #MINVER#
+* Build-Depends-Package: libastro-dev
  _Z11JupCallistodR4Vec3S0_@Base 4:4.12.80
  _Z11JupGanymededR4Vec3S0_@Base 4:4.12.80
  _Z11PosCallistod@Base 4:4.12.80
